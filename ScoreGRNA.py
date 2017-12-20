@@ -10,6 +10,7 @@ class OffTargetScore(object):
 	def pairwise(self,_positions):
 		distances=[]
 		mean=0
+		### This has changed -- they say each pair, not consecutive!!
 		for p in range(len(_positions)):
 			for l in range(p+1,len(_positions)):
 				distances.append(abs(_positions[l]-_positions[p]))
